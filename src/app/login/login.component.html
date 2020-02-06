@@ -1,0 +1,52 @@
+<section class="login-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 login-sec">
+                <h2 class="text-center">EMBL EBI LOGIN</h2>
+                <form [formGroup]="signinForm" (ngSubmit)="onSubmit()" class="login-form">
+                    <div class="form-group">
+                        <label for="username" class="text-uppercase">Username</label>
+                        <input type="text" class="form-control" formControlName="username" placeholder="username">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="text-uppercase">Password</label>
+                        <input type="password" class="form-control" formControlName="password" placeholder="">
+                    </div>
+
+
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            <small>Remember Me</small>
+                        </label>
+                        <button type="submit" class="btn btn-login float-right">Login</button>
+                    </div>
+
+                </form>
+                <div class="copy-text">Designed and Developed by <a href="https://www.linkedin.com/in/nandom-gusen-b764b576">Nandom Gusen</a></div>
+            </div>
+            <div class="col-md-8 banner-sec">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid"
+                                src="https://www.ebi.ac.uk/sites/ebi.ac.uk/files/groups/external_relations/images/wide-imagery/MARTIN-HERRANZ_Epigenetics_EMBL620x425_1.jpg"
+                                alt="First slide">
+                            <div class="carousel-caption d-none d-md-block">
+                             
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,63 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <!-- Checkbox Column -->
+    <ng-container matColumnDef="select">
+        <th mat-header-cell *matHeaderCellDef>
+            <mat-checkbox (change)="$event ? masterToggle() : null"
+                [checked]="selection.hasValue() && isAllSelected()"
+                [indeterminate]="selection.hasValue() && !isAllSelected()" [aria-label]="checkboxLabel()">
+            </mat-checkbox>
+        </th>
+        <td mat-cell *matCellDef="let row">
+            <mat-checkbox (click)="$event.stopPropagation()"
+                (change)="$event ? selection.toggle(row) : null" [checked]="selection.isSelected(row)"
+                [aria-label]="checkboxLabel(row)">
+            </mat-checkbox>
+        </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="FirstName">
+        <th mat-header-cell *matHeaderCellDef> First Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.first_name}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="LastName">
+        <th mat-header-cell *matHeaderCellDef> Last Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.last_name}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="Age">
+        <th mat-header-cell *matHeaderCellDef> Age </th>
+        <td mat-cell *matCellDef="let element"> {{element.age}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Hobby">
+        <th mat-header-cell *matHeaderCellDef> Hobby </th>
+        <td mat-cell *matCellDef="let element"> {{element.hobby}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Edit">
+        <th mat-header-cell *matHeaderCellDef> Edit </th>
+        <td mat-cell *matCellDef="let element">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" (click)="editSelected(element)"
+                style="-webkit-text-fill-color:green">edit</mat-icon>
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Delete">
+        <th mat-header-cell *matHeaderCellDef> Delete </th>
+        <td mat-cell *matCellDef="let element">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" (click)="deleteSelected(element)"
+                style="-webkit-text-fill-color:red">delete</mat-icon>
+        </td>
+    </ng-container>
+
+    
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="selection.toggle(row)">
+    </tr>
+
+</table>
+<mat-paginator [pageSize]="20" [pageSizeOptions]="[20, 30, 40]" showFirstLastButtons></mat-paginator>

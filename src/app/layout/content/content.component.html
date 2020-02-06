@@ -1,0 +1,35 @@
+<div class="container-fluid">
+
+    <nav class="navbar card2 navbar-expand-md navbar-light">
+        <a class="navbar-brand">
+            <i class="fa fa-home"></i>
+        </a>
+
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+           
+
+
+            <div class="navbar-nav">
+
+                <button class="btn btn-xs btn-inverse waves-effect waves-light m-b-5"> <i class="fa fa-plus"
+                        aria-hidden="true"></i> <a [routerLink]="'/home/add-person'">Add New Person</a> </button>
+
+            </div>
+            <div class="navbar-nav">
+
+                    <button class="btn btn-xs btn-inverse waves-effect waves-light m-b-5"> <i class="fa fa-users"
+                            aria-hidden="true"></i> <a [routerLink]="'/home/person-list'">List of persons</a> </button>
+    
+                </div>
+
+        </div>
+    </nav>
+
+
+    <router-outlet></router-outlet>
+
+
+
+</div>
