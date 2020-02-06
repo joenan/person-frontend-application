@@ -1,13 +1,13 @@
-# Demo 
+## Demo 
 The demo for this application can be found at https://www.stagingapp.live/person-front-end The app can be logged in without a user credential. 
 
-# Backend
+## Backend
 The backend for this application can be found on this github Link = https://github.com/joenan/person-backend-application
 
-# Spring Security Oauth2 Backend
+## Spring Security Oauth2 Backend
 The Spring Security Rest API Oauth2 backend can be found at https://github.com/joenan/person-backend-application-security-oauth2
 
-# Person
+## Person
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 
 ## Install the Front-end Application 
