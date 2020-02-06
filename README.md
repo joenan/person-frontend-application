@@ -10,8 +10,8 @@ The Spring Security Rest API Oauth2 backend can be found at https://github.com/j
 # Person
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 
-# Install
-This project can be installed using the command 'npm install'
+## Install the Front-end Application 
+This Front-end Application can be installed using the command line with the code 'npm install'. The command will install all the dependencies used in this application.
 
 ## Development server
 
