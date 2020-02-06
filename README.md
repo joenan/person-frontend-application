@@ -5,17 +5,6 @@ The demo for this application can be found at https://www.stagingapp.live/person
 The backend for this application can be found on this github Link = https://github.com/joenan/person-backend-application
 The backend which has Spring Security Oauth2 can be found at https://github.com/joenan/person-backend-application-security-oauth2
 
-#Running Backènd Test
-Run the command 'mvn test' on the terminal to run all test cases on the backend
-
-#Running Individual Test
-To run the PersonController Integration test, Run the command mvn -Dtest=PersonControllerIntegrationTest test
-To run the PersonController Unit test, Run the command mvn -Dtest=PersonControllerTest test
-To run the PersonRepository Unit test, Run the command mvn -Dtest=PersonRepositoryTest test
-To run the PersonService Unit test, Run the command mvn -Dtest=PersonServiceTest test
-
-
-
 # Person
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 
