@@ -21,6 +21,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { NgxInputTagModule } from 'ngx-input-tag';
+import { PersonEditComponent } from './person/person-edit/person-edit.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { NgxInputTagModule } from 'ngx-input-tag';
     ContentComponent,
     PersonListComponent,
     PersonAddComponent,
-    LoginComponent
+    LoginComponent,
+    PersonEditComponent
   ],
   imports: [
     BrowserModule,

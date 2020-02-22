@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { PersonListComponent } from './person/person-list/person-list.component';
 import { LoginComponent } from './login/login.component';
 import { PersonAddComponent } from './person/person-add/person-add.component';
+import { PersonEditComponent } from './person/person-edit/person-edit.component';
 
 
 const routes: Routes = [
@@ -13,11 +14,12 @@ const routes: Routes = [
   children: [
     { path: '', component: PersonListComponent },
     { path: 'add-person', component: PersonAddComponent },
+    { path: 'edit-person', component: PersonEditComponent },
     { path: 'person-list', component: PersonListComponent },
   ]
 },
 // otherwise redirect to home
-{ path: '**', redirectTo: '' }
+{ path: '**', redirectTo: 'home' }
 ];
 
 @NgModule({

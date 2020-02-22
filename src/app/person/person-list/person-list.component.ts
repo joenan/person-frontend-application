@@ -44,7 +44,8 @@ export class PersonListComponent implements OnInit {
       this.dataSource.data = res;
     },
       error => {
-        this.toastr.error(error.error.message, 'error');
+        // this.toastr.error(error.error.message);
+        console.log(error)
       }
     )
   }
@@ -52,7 +53,7 @@ export class PersonListComponent implements OnInit {
   editSelected(e: any) {
     localStorage.setItem('selectedData', JSON.stringify(e));
       // this.subscriptionService.sendMessage(e);
-      this.router.navigate(['home/add-person']);
+      this.router.navigate(['home/edit-person']);
   }
 
   deleteSelected(e: any) {

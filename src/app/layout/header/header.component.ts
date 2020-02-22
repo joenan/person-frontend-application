@@ -20,9 +20,8 @@ export class HeaderComponent implements OnInit {
   }
 
   toggle() {
-    $("#menu-toggle").click(function(e) {
-      $("#wrapper").toggleClass("toggled");
-    });
+    var wrapper = document.querySelector('#wrapper');
+    wrapper.classList.toggle("toggled");
   }
 
 }

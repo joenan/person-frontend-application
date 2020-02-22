@@ -1,17 +1,17 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Subscription } from 'rxjs';
 import { ToastrService } from 'ngx-toastr';
 import { ApiService } from 'src/app/service/api.service';
-import { first } from 'rxjs/operators';
-import { Subscription } from 'rxjs';
 import { SubcriptionSubjectService } from 'src/app/service/subcription-subject.service';
+import { first } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-person-add',
-  templateUrl: './person-add.component.html',
-  styleUrls: ['./person-add.component.css']
+  selector: 'app-person-edit',
+  templateUrl: './person-edit.component.html',
+  styleUrls: ['./person-edit.component.css']
 })
-export class PersonAddComponent implements OnInit, AfterViewInit {
+export class PersonEditComponent implements OnInit {
 
   hobby: any = [];
   personForm: FormGroup;
@@ -45,6 +45,14 @@ export class PersonAddComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
+    var data = JSON.parse(localStorage.getItem('selectedData'));
+
+    if(data == null) {
+      this.personForm.reset();
+    }
+    else {
+      this.personForm.patchValue(data);
+    }
 
   }
 
@@ -73,7 +81,6 @@ export class PersonAddComponent implements OnInit, AfterViewInit {
           this.personForm.reset();
           for (let i in this.personForm.controls) {
             this.personForm.controls[i].setErrors(null);
-            this.hobby = '';
           }
 
           this.toastr.success(data.message, 'Success');
