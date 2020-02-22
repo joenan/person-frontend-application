@@ -1,6 +1,31 @@
-# Person
+## Demo 
+The demo for this application can be found at https://www.stagingapp.live/person-front-end The app can be logged in without a user credential. 
 
+## Backend
+The backend for this application can be found on this github Link = https://github.com/joenan/person-backend-application
+
+## Spring Security Oauth2 Backend
+The Spring Security Rest API Oauth2 backend can be found at https://github.com/joenan/person-backend-application-security-oauth2
+
+## Person Front-end Application
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
+
+## Installing and running the Front-end Application 
+This Front-end Application can be installed using the command line with the code 'npm install'. The command will install all the dependencies used in this application.
+
+1. Install node.js applicaiton on your system
+
+2. Clone the app using the command  git clone https://github.com/joenan/person-frontend-application.git
+
+After installing and cloning the app, then navigate to the directory of the cloned app and run the commands below 
+
+3. npm install -g @angular/cli
+
+4. npm install 
+
+5. npm start
+
+When the application runs, just click on login without the username and password on the login screen. It will lauch the Person Front end Application.
 
 ## Development server
 
