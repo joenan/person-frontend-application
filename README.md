@@ -7,10 +7,10 @@ The backend for this application can be found on this github Link = https://gith
 ## Spring Security Oauth2 Backend
 The Spring Security Rest API Oauth2 backend can be found at https://github.com/joenan/person-backend-application-security-oauth2
 
-## Person
+## Person Front-end Application
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 
-## Install the Front-end Application 
+## Installing and running the Front-end Application 
 This Front-end Application can be installed using the command line with the code 'npm install'. The command will install all the dependencies used in this application.
 
 1. Install node.js applicaiton on your system
