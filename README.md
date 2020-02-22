@@ -25,6 +25,8 @@ After installing and cloning the app, then navigate to the directory of the clon
 
 5. npm start
 
+When the application runs, just click on login without the username and password on the login screen. It will lauch the Person Front end Application.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
