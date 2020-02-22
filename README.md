@@ -13,6 +13,18 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Install the Front-end Application 
 This Front-end Application can be installed using the command line with the code 'npm install'. The command will install all the dependencies used in this application.
 
+1. Install node.js applicaiton on your system
+
+2. Clone the app using the command  git clone https://github.com/joenan/person-frontend-application.git
+
+After installing and cloning the app, then navigate to the directory of the cloned app and run the commands below 
+
+3. npm install -g @angular/cli
+
+4. npm install 
+
+5. npm start
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
