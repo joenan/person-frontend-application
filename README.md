@@ -6,6 +6,8 @@ The backend for this application can be found on this github Link = https://gith
 
 ## Spring Security Oauth2 Backend
 The Spring Security Rest API Oauth2 backend can be found at https://github.com/joenan/person-backend-application-security-oauth2
+The Instruction on Installing and Running the Spring Security Oauth2 REST API backend application can be found at https://www.youtube.com/watch?v=ND5bSriaOE8&feature=youtu.be
+Watch the video and you will learn how to create user credentials, client credentials, get access token, verify access token and use the access token to send get and post request via Postman.
 
 ## Person Front-end Application
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
